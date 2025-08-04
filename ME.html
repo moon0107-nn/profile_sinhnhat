@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>ME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="google-section">
+  <!-- Logo Google -->
+  <div class="logo">
+    <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+  </div>
+
+  <!-- Thanh tìm kiếm -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Nhập để tìm kiếm..." onclick="fillDate()" spellcheck="false">
+    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" onclick="showResult()" />
+  </div>
+  </div>
+  <!-- Kết quả hiện ra -->
+  <div class="main-content"id="resultBox" style="display: none;">
+  
+    <div class="profile-container">
+      <img src="bia.jpg" class="bia">
+      <img src="me.jpg" class="avatar">
+  </div>
+  <div class="dongho"></div>
+    <img src="dh.jpg" class="dongho">
+    <div class="conan"></div>
+    <img src="conan.jpg" class="conan">
+    <div class="infor-section">
+    <div class="section">
+      <h4> Cá nhân</h4>
+      <ul>
+        <li>📖 Học tập</li>
+    <li>💰 Tài chính</li>
+    <li>🎯 Bảng tầm nhìn</li>
+    <li>📝 Ghi chú</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h4> Sở thích</h4>
+      <ul>
+        <li>🎬 Giải trí</li>
+        <li>🎮 Game
+      <ul>
+        <li>📖 Book</li>
+        <li>🎵 Music</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cugiai">
+  <h4>🦀 CỰ GIẢI</h4>
+  <ul>
+    <li>🗺️ Độc lập</li>
+    <li>🌊 Linh hoạt</li>
+    <li>🧸 Thiếu an toàn</li>
+    <li>💞 Đồng cảm</li>
+  </ul>
+  <div class="lichsn">
+      <p>1</p>
+    </div>
+</div>
+    <img src="cua.jpg" class="cua">
+    <img src="lich.jpg" class="lich">
+    <img src="kidnan.jpg" class="kidnan">
+</div>
+  </div>
+  <!-- Script xử lý -->
+  <script>
+    function fillDate() {
+      document.getElementById("searchInput").value = "01/07 là ngày ai ra đời ?";
+    }
+
+    function showResult() {
+      document.querySelector(".logo").style.display = "none";
+      document.querySelector(".search-box").style.display = "none";
+      document.getElementById("resultBox").style.display = "block";
+      document.querySelector(".google-section").style.display = "none";
+  document.getElementById("resultBox").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
